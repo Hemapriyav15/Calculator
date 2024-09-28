@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url('calculator-colorful-paper-clips_23-2148475323.avif');
+    background-position: center;
+    background-size: cover;
+}
+.calc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centers the text inside the container */
+    background-color: black;
+    color: white;
+    height: 80px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+}
+
+/* General calculator container styling */
+.Calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:360px;
+    height: 360px;
+    margin: 50px auto;
+    border: 10px solid #a81a1a;
+    border-radius: 50%;
+    box-shadow: 6px 5px 15px rgba(97, 33, 90, 0.2);
+    background-color: rgb(165, 196, 195);
+    padding: 30px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+}
+
+/* Display screen styling */
+#display {
+    width: 50%;
+    height: 20px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #0f0f0f;
+    border-radius: 30px;
+    background-color: pink;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Button container styling */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Individual button styling */
+.btn {
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+    background-color: darkmagenta;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #d4d4d4;
+}
+
+/* Button active effect */
+.btn:active {
+    transform: scale(0.95);
+}
+.btn:nth-child(4n) {
+    background-color: #37b3e8;
+    color: white;
+}
+
+/* Special styles for the clear button */
+.btn:first-child {
+    background-color: #db1919;
+    color: white;
+}
